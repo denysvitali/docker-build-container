@@ -24,7 +24,9 @@ RUN apt-get update && apt-get install -y proot \
     intltool \
     libxml2-dev \
     curl \
-    python
+    python \
+    glib-dev
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 ENV TOP=/app
 ENV ARCH=aarch64
 WORKDIR /app
