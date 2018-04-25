@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y proot \
     libxml2-dev \
     curl \
     python \
-    glib-dev
+    libglib2.0-dev
 RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 ENV TOP=/app
 ENV ARCH=aarch64
